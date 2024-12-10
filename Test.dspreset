@@ -1,0 +1,9 @@
+<?xml version = "1.1" encoding="UTF-8"?>
+
+<Decentsampler>
+    <group> 
+        <group>
+            <sample rootNote="34" path="Piano Samples\A#_34.wav"/>
+        </group>
+    </group>
+</Decentsampler>
