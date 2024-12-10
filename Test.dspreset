@@ -1,9 +1,32 @@
-<?xml version = "1.1" encoding="UTF-8"?>
+<?xml version = "1.0" encoding="UTF-8" ?>
 
 <Decentsampler>
+    <ui bgImage="BG/DND oneshot" width="615" height="409">
+        <tab name="main">
+            <labeled-knob x="560" y="0" label="Tone" type="float" minValue="60" maxValue="22000" textColor="FF000000" value="22000">
+                <binding type="amp" level="group" position="0" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1.0"  />
+            </labeled-knob>
+        </tab>
+    </ui>
     <group> 
         <group>
-            <sample rootNote="34" path="Piano Samples\A#_34.wav"/>
+            <sample rootNote="24" loNote="24" hiNote="24" path="Piano Samples\C_24.wav"/>
+            <sample rootNote="25" loNote="25" hiNote="25" path="Piano Samples\C#_25.wav"/>
+            <sample rootNote="26" loNote="26" hiNote="26" path="Piano Samples\D_26.wav"/>
+            <sample rootNote="27" loNote="27" hiNote="27" path="Piano Samples\D#_27.wav"/>
+            <sample rootNote="28" loNote="28" hiNote="28" path="Piano Samples\E_28.wav"/>
+            <sample rootNote="29" loNote="33" hiNote="29" path="Piano Samples\F_29.wav"/>
+            <sample rootNote="30" loNote="30" hiNote="30" path="Piano Samples\F#_30.wav"/>
+            <sample rootNote="31" loNote="31" hiNote="31" path="Piano Samples\G_31.wav"/>
+            <sample rootNote="32" loNote="32" hiNote="32" path="Piano Samples\G#_32.wav"/>
+            <sample rootNote="33" loNote="33" hiNote="33" path="Piano Samples\A_33.wav"/>
+            <sample rootNote="34" loNote="34" hiNote="34" path="Piano Samples\A#_34.wav"/>
         </group>
     </group>
+
+    <effects>
+        <effect type="lowpass_pl" frequency="22000" />
+        <effect type="reverb" wetlevel="0.5"/>
+    </effects>
+
 </Decentsampler>
